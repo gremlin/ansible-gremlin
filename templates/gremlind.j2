@@ -73,6 +73,12 @@ https_proxy= {{ gremlin_config["https_proxy"] }}
 #https_proxy=
 {% endif -%}
 
+{% if gremlin_config["service_discovery"] is defined -%}
+collect_processes= true
+{% else -%}
+#collect_processes=
+{% endif -%}
+
 
 
 # Any additional Gremlin Daemon variables (such as GREMLIN_IDENTIFIER) may be defined here

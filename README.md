@@ -23,6 +23,7 @@ Role Variables
 - `gremlin_client_tags` - Comma-separated list of custom tags to assign to this client (e.g. GREMLIN_CLIENT_TAGS="zone=us-east1,role=mysql,foo=bar")
 - `http_proxy` - In the form http[s]://[username:passsword@]address:port
 - `https_proxy` - In the form http[s]://[username:passsword@]address:port
+- 'service_discovery' - If specified, will enable Service Discovery.
 
 
 Dependencies

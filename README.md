@@ -41,7 +41,7 @@ With TeamID & Secret
 
 - hosts: localhost
   roles:
-     - { role: Gremlin.gremlin }
+     - { role: Gremlin.gremlin, become: yes}
   vars:
     gremlin_config:
       gremlin_team_id: 9999999a-888b-777c-666d-55555555555e
@@ -54,7 +54,7 @@ With Private Key authentication
 
 - hosts: localhost
   roles:
-     - { role: Gremlin.gremlin }
+     - { role: Gremlin.gremlin, become: yes}
   vars:
     gremlin_config:
       gremlin_team_id: 9999999a-888b-777c-666d-55555555555e
